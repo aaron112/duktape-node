@@ -17,7 +17,7 @@
 				"src/run_async.cpp"
 			],
 			"conditions": [
-				["OS=='linux'", {
+				["OS=='linux'" or "OS=='mac'", {
 					"cflags": [
 						"-O2",
 						"-std=c++0x",
@@ -38,7 +38,7 @@
 				"lib/duktape/src/duktape.c"
 			],
 			"conditions": [
-				["OS=='linux'", {
+				["OS=='linux'" or "OS=='mac'", {
 					"cflags": [
 						"-O2",
 						"-std=c99",
